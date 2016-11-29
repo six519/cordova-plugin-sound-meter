@@ -8,6 +8,10 @@ Installation
 
 ``cordova plugin add https://github.com/six519/cordova-plugin-sound-meter.git``
 
+or via npm
+
+``cordova plugin add cordova-plugin-sound-meter``
+
 Usage
 =====
 ::
