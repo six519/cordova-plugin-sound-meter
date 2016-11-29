@@ -36,8 +36,11 @@ public class SoundMeterPlugin extends CordovaPlugin {
 
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
 
+        JSONObject r = new JSONObject();
+
         if ("getAmplitude".equals(action)) {
-            callbackContext.success((float) SoundMeterPlugin.soundMeter.getAmplitude());
+            r.put("amplitude", SoundMeterPlugin.soundMeter.getAmplitude());
+            callbackContext.success(r);
         } else {
             return false;
         }
