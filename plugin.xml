@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-sound-meter"
+        version="1.0.0">
+    <name>Sound Meter Plugin</name>
+    <description></description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,sound, meter</keywords>
+    <repo></repo>
+    <issue></issue>
+    <engines>
+        <engine name="cordova-plugman" version=">=4.2.0"/>
+    </engines>
+
+    <js-module src="www/soundmeterplugin.js" name="SoundMeterPlugin">
+        <merges target="soundMeterPlugin" />
+    </js-module>
+    
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="SoundMeterPlugin" >
+                <param name="android-package" value="com.ferdinandsilva.android.SoundMeterPlugin"/>
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.RECORD_AUDIO" />
+        </config-file>
+        <source-file src="src/android/SoundMeterPlugin.java" target-dir="src/com/ferdinandsilva/android" />
+        <source-file src="src/android/SoundMeter.java" target-dir="src/com/ferdinandsilva/android" />
+    </platform>
+
+</plugin>
