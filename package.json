@@ -1,0 +1,34 @@
+{
+  "name": "cordova-plugin-sound-meter",
+  "version": "1.0.0",
+  "description": "Cordova Plugin To Get Sound Amplitude",
+  "cordova": {
+    "id": "cordova-plugin-sound-meter",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/six519/cordova-plugin-sound-meter.git"
+  },
+  "keywords": [
+    "cordova",
+    "sound",
+    "meter",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova-plugman",
+      "version": ">=4.2.0"
+    }
+  ],
+  "author": "Ferdinand E. Silva",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/six519/cordova-plugin-sound-meter/issues"
+  },
+  "homepage": "https://github.com/six519/cordova-plugin-sound-meter#readme"
+}
